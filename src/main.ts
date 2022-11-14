@@ -106,7 +106,7 @@ async function getUserInfo(gql: typeof graphql, includeForks = false) {
                     }
                 }
             }
-            repositories(isFork: ${includeForks}, first: 100) {
+            repositories(first: 100) {
                 totalCount
                 nodes {
                     stargazers {
